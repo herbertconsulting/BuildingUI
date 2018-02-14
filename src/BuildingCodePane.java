@@ -1,17 +1,12 @@
-import javafx.application.Application;
 
-/**
- * Herb Everett
- */
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import javafx.scene.paint.Color;
 
 public class BuildingCodePane extends Application {
     @Override
@@ -29,14 +24,13 @@ public class BuildingCodePane extends Application {
     private HBox getHBox() {
         HBox hBox = new HBox(10);
         hBox.setPadding(new Insets(10, 10, 10, 10));
-        hBox.setStyle("-fx-background-color: gray");
-//        hBox.getChildren().add(new String("Buildings"));
+        hBox.setStyle("-fx-background-color: #9AEDEB");
 
 
-        Label[] buildings = {new Label("AT"), new Label ("DH"), new Label ("JWH"), new Label ("HH"),
-                new Label ("SH"), new Label ("BH"), new Label ("AB"), new Label ("CO")};
+        Button[] buildings = {new Button("AT"), new Button ("DH"), new Button ("JWH"), new Button ("HH"),
+                new Button ("SH"), new Button ("BH"), new Button ("AB"), new Button ("CO")};
 
-        for (Label building: buildings) {
+        for (Button building: buildings) {
             HBox.setMargin(building, new Insets(0, 0, 0, 0));
             hBox.getChildren().addAll(building);
         }

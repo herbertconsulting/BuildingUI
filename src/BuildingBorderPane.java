@@ -1,8 +1,4 @@
-import javafx.application.Application;
 
-/**
- * Herb Everett
- */
 import  javafx.application.Application;
 import  javafx.geometry.Insets;
 import  javafx.scene.Scene;
@@ -39,8 +35,8 @@ public class BuildingBorderPane extends Application {
         Application.launch(args);
     }
 }
-        class CustomPane extends StackPane {
-    public CustomPane(String title) {
+class CustomPane extends StackPane {
+        public CustomPane(String title) {
         getChildren().add(new Label(title));
         setStyle("-fx-border-color: black");
         setPadding(new Insets(11.5,12.5, 13.5, 14.5));

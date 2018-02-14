@@ -1,6 +1,3 @@
-/**
- * Herb Everett
- */
 
 import javafx.application.Application;
 import javafx.geometry.HPos;
